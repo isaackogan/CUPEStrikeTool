@@ -36,11 +36,13 @@ export default function Home() {
                     At the moment, there is a chance of a&nbsp;
                     <PLink href={"https://3903.cupe.ca/"} target={"_blank"}>CUPE 3903</PLink> strike
                     starting this Mon, Feb 26th, 2024. This tool cross-references the CUPE member list with current courses to inform you if your course will be affected.
-                    &nbsp;Please use this <strong>only as an advisement</strong> and understand this is <strong>not</strong> a York University tool. This was
+                    Please use this <strong>only as an advisement</strong> and understand this is <strong>not</strong> a York University tool. This was
                     student-made to help other students navigate this confusing time.
                 </p>
                 <p>
-                    Please watch your inbox as your professors will reach out to communicate information daily.
+                    In the event of a strike, YorkU will publish a list of active classes, tutorials and labs,
+                    as well as provide information on all eClass course pages, making this app effectively redundant. Please check your e-mail
+                    before Monday as professors will 100% communicate with you their plans.
                 </p>
                 <StrikeForm />
             </DescriptionBox>

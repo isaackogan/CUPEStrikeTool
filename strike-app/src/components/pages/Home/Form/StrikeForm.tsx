@@ -31,7 +31,7 @@ export default class StrikeForm extends Component<any, IStrikeState> {
     async componentDidMount() {
         if (this.didMount) return;
         this.didMount = true;
-        setInterval(this.updateStats.bind(this), 1000 * 5);
+        setInterval(this.updateStats.bind(this), 1000 * 30);
         setInterval(this.tickAnimation.bind(this), 50);
         await this.updateStats();
     }
@@ -45,6 +45,7 @@ export default class StrikeForm extends Component<any, IStrikeState> {
     async updateStats() {
         let res: Response = await fetch("https://yorkapi.isaackogan.com/v1/main/cst/stats");
         let json: {navs: number | null} = await res.json();
+        if (!json.navs) json.navs = 0;
         let animatedSearches = !this.state.animatedSearches ? Math.floor(json.navs * 9.8/10) : this.state.animatedSearches;
         this.setState({...this.state, searches: json.navs, animatedSearches: animatedSearches});
     }

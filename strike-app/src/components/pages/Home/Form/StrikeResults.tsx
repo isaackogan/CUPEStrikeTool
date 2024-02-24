@@ -116,7 +116,7 @@ export default class StrikeResults extends Component<IProps, IStrikeResultsState
         }
         else if (cupeProfs.length > 0 && nonCupeProfs.length < 1) {
             return (
-                <>Your section's lecture is taught by <strong>{cupeProfs.length} CUPE instructor(s)</strong> and will be affected.</>
+                <>Your section's lecture is taught by <strong>{cupeProfs.length} CUPE instructor(s)</strong> and may be affected.</>
             )
         }
         else {
