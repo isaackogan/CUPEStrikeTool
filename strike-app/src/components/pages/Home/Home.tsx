@@ -42,7 +42,7 @@ export default function Home() {
                 <p>
                     In the event of a strike, YorkU will publish a list of active classes, tutorials and labs,
                     as well as provide information on all eClass course pages, making this app effectively redundant. Please check your e-mail
-                    before Monday as professors will 100% communicate with you their plans.
+                    before Monday as professors will communicate their plans with you.
                 </p>
                 <StrikeForm />
             </DescriptionBox>
